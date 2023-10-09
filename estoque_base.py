@@ -1,1 +1,1 @@
-estoque = {'1': {'Produto': 'leite', 'Valor': 20.0, 'Quantidade': 10}, '2': {'Produto': 'cafe', 'Valor': 2.0, 'Quantidade': 2}}
+estoque = {'1': {'Produto': 'leite', 'Valor': 20.0, 'Quantidade': 10}, '2': {'Produto': 'cafe', 'Valor': 2.0, 'Quantidade': 2}, '3': {'Produto': 'biscoito', 'Valor': 232.0, 'Quantidade': 22}, '32': {'Produto': 'fe', 'Valor': 32.0, 'Quantidade': 32}}

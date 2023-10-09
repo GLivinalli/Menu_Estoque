@@ -8,7 +8,7 @@ def att_banco(estoque_now=""):
      
         estoque_base.estoque.update(estoque_now)
         
-        with open("estoque_base.py", "w") as arquivo:
+        with open("MENU-ESTOQUE/estoque_base.py", "w") as arquivo:
             novo_conteudo = f'estoque = {estoque_base.estoque}\n'
             arquivo.write(novo_conteudo)
 
@@ -39,22 +39,22 @@ def add_prod():
                         print("Já existe esse nome de produto!")
                         menu.menu_inicial()
                 
-                    else:
-                        cls()
-                        print("- ID: {}\n- Produto: {}".format(id, prod))
-                        valor = input("Valor: ")
+            
+                cls()
+                print("- ID: {}\n- Produto: {}".format(id, prod))
+                valor = input("Valor: ")
 
-                        cls()
-                        print("- ID: {}\n- Produto: {}\n- Valor: {}".format(id, prod, valor))
-                        quant = input("Quantidade: ")
+                cls()
+                print("- ID: {}\n- Produto: {}\n- Valor: {}".format(id, prod, valor))
+                quant = input("Quantidade: ")
                         
-                        cls()
-                        print("- ID: {}\n- Produto: {}\n- Valor: {}\n- Quantidade: {}".format(id, prod, valor, quant))
-                        print(f"Produto {prod} adicionado ao estoque.")
+                cls()
+                print("- ID: {}\n- Produto: {}\n- Valor: {}\n- Quantidade: {}".format(id, prod, valor, quant))
+                print(f"Produto {prod} adicionado ao estoque.")
 
         except ValueError:
             cls()
-            print("Voltando...")
+            print("Voltando..2.")
             menu.menu_inicial()
         
         prod_info(id, prod, valor, quant)        
